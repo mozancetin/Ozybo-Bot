@@ -34,7 +34,7 @@ def get_guilds():
     return len(guilds)
 
 
-bot = commands.Bot(command_prefix=get_prefix)
+bot = commands.Bot(command_prefix=get_prefix, intents=discord.Intents.all())
 status = cycle([f"Şu anda {get_guilds()} sunucuda aktifim!","Robotlar evreni ele geçirecek hahahaha!", "Eğleniyorum", "Hayatımı sorguluyorum", "Hey!", "Ben kimim?", "Burada ne işim var?", "42", "Made by Ozybo"])
 
 
